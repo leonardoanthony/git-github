@@ -1,41 +1,63 @@
-Commandos Git:
+## Commandos Git:
 
-git init
+### 📍 Local
 
-Inicia o versionamento no projeto
+Inicia o versionamento
 
-git add
+    git init
 
-coloca o(s) arquivo(s) para modo staging, aguardando a serem commitados
+Verifica os arquivos modificados
 
-git commit -m 'mensagem do commit'
+    git status
 
-cria um ponto no versionamento, inserindo uma mensagem indicando o que foi feito até aquele momento nos arquivos do staging
+Adiciona os arquivos para "staging"
 
-git branch -M "nomeDaBranch"
+    git add (nome do arquivo) / *
 
-Renomeia a branch atual para "nomeDaBranch"
+Cria o commit
+    
+    git commit -m "mensagem"
 
-git remote add origin {link}
+### 🌿 Branches
 
-vincula o repositório local a um repositório remoto, link = link do repositório remoto
+Lista as branches
 
-git push {-u} origin {branch}
+    git branch
 
-envia a branch atual para o repositório remoto, -u sómente usado na primeira vez
+Renomei a branch atual
 
-git checkout -b "nova-branch"
+    git branch -M "nome da branch"
 
-cria uma nova branch e direciona para ela
+Cria uma nova branch e redireciona pra ela
 
-git merge {outra-branch}
+    git checkout -b "nome da branch"
 
-traz o código da "outra-branch" para sua branch atual
+Direciona pra a branch
 
-git clone {link}
+    git checkout "nome da branch"
 
-baixa um repositório remoto
+Traz o código da "outra branch" para a atual
 
-git pull 
+    git merge {outra branch} 
 
-baixa atualizações do repositório remoto
+### 🛰️ Remoto
+
+Vincula o repositorio local ao remoto
+
+    git remote add origin "link do repositório"
+
+Sobe os arquivos para o github na primeira vez
+
+    git push -u origin main
+
+Sobe os arquivos nas demais vezes
+
+    git push 
+
+Clona o repositório remoto para o local
+
+    git clone "link do repositorio"
+
+Traz as alterações do repositório remoto pra o local
+
+    git pull 
