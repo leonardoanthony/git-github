@@ -24,7 +24,7 @@
 
     git branch
 
-#### Renomei a branch atual
+#### Renomeia a branch atual
 
     git branch -M "nome da branch"
 
